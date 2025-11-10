@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MartianBank — Online Banking</title>
+  <meta name="description" content="Modern, secure landing page that redirects to the official online banking portal.">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/styles.css" as="style">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="nav" role="banner">
+    <div class="brand">
+      <img src="assets/logo.svg" alt="" class="logo" width="36" height="36" />
+      <span class="brand-name">MartianBank</span>
+    </div>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="nav-links">Menu</button>
+    <nav id="nav-links" class="nav-links" aria-label="Primary">
+      <a href="#features">Features</a>
+      <a href="#security">Security</a>
+      <a href="#support">Support</a>
+      <button id="topCta" class="btn btn-primary" type="button" aria-label="Go to Online Banking">Online Banking</button>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="hero-text">
+        <p class="eyebrow">Digital Banking • Landing</p>
+        <h1>Banking for the next frontier</h1>
+        <p class="sub">A streamlined MartianBank‑style landing page. No credentials collected here—click below to proceed to the official portal.</p>
+        <div class="cta-row">
+          <button id="primaryCta" class="btn btn-primary" type="button">Continue to Online Banking</button>
+          <a href="#quick-access" class="btn btn-ghost">Open Quick Access</a>
+        </div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <img src="assets/hero-illustration.svg" alt="" width="560" height="360">
+      </div>
+    </section>
+
+    <section id="quick-access" class="card login-card" aria-labelledby="quick-access-title">
+      <h2 id="quick-access-title">Quick Access</h2>
+      <p class="muted">This page does not collect usernames/passwords. Click <strong>Sign In</strong> to continue to the official portal.</p>
+      <div class="form-row">
+        <label for="profile">Profile</label>
+        <select id="profile">
+          <option>Retail Banking</option>
+          <option>Corporate Banking</option>
+          <option>Private Banking</option>
+        </select>
+      </div>
+      <div class="form-row">
+        <label for="region">Region</label>
+        <select id="region">
+          <option>UAE</option>
+          <option>KSA</option>
+          <option>Qatar</option>
+          <option>Bahrain</option>
+          <option>Oman</option>
+          <option>Kuwait</option>
+        </select>
+      </div>
+      <button id="loginBtn" class="btn btn-primary" type="button">Sign In</button>
+      <p class="hint">You will be redirected to <code>ebank-onprem.securityfabric.me</code>.</p>
+    </section>
+
+    <section id="features" class="features">
+      <article class="tile">
+        <h3>Unified Accounts</h3>
+        <p>Balances and activity across checking, savings, and cards in one view.</p>
+      </article>
+      <article class="tile">
+        <h3>Transfers & Payments</h3>
+        <p>Schedule and track payments with clear confirmations and alerts.</p>
+      </article>
+      <article class="tile">
+        <h3>Mobile & Web</h3>
+        <p>Consistent experience across devices with accessibility in mind.</p>
+      </article>
+    </section>
+
+    <section id="security" class="security card">
+      <h2>Security First</h2>
+      <ul>
+        <li>HTTPS enforced with HSTS</li>
+        <li>CSP, X‑Content‑Type‑Options, Referrer‑Policy</li>
+        <li>Strong TLS and SSO configured on the target portal</li>
+      </ul>
+    </section>
+
+    <section id="support" class="support">
+      <div class="trust">
+        <h2>Trusted by customers across the region</h2>
+        <p class="muted">Built with performance and reliability for the GCC.</p>
+      </div>
+      <div class="cta-center">
+        <button id="bottomCta" class="btn btn-primary" type="button">Open Online Banking</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <p>© <span id="year"></span> MartianBank (Demo)</p>
+    <nav aria-label="Legal">
+      <a href="#">Accessibility</a>
+      <a href="#">Privacy</a>
+      <a href="#">Terms</a>
+    </nav>
+  </footer>
+
+  <script src="assets/app.js" defer></script>
+</body>
+</html>
